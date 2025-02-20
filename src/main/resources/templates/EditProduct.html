@@ -28,7 +28,9 @@
 
             <label for="nameInput">Name</label>
 
-            <input th:field="*{productName}" type="text" class="form-control mb-4 col-4" id="nameInput" placeholder="Enter product' name">
+            <input th:field="*{productName}" type="text" class="form-control mb-4 col-4" id="nameInput" placeholder="Enter product name" required>
+
+            <small class="text-danger" th:if="${#fields.hasErrors('productName')}" th:text="${#fields.errors('productName')[0]}"></small>
 
         </div>
 
@@ -36,7 +38,9 @@
 
             <label for="quantityInput">Quantity</label>
 
-            <input th:field="*{productQuantity}" type="text" class="form-control mb-4 col-4" id="quantityInput" placeholder="Enter product' quantity">
+            <input th:field="*{productQuantity}" type="text" class="form-control mb-4 col-4" id="quantityInput" placeholder="Enter product' quantity" min="0" required>
+
+            <small class="text-danger" th:if="${#fields.hasErrors('productQuantity')}" th:text="${#fields.errors('productQuantity')[0]}"></small>
 
         </div>
 
