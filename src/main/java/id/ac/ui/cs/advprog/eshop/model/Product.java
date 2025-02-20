@@ -21,11 +21,4 @@ public class Product {
     public Product () {
         productId = UUID.randomUUID().toString();
     }
-
-    public void setProductQuantity(int productQuantity) {
-        if (productQuantity < 0) {
-            throw new IllegalArgumentException("Product quantity must not be negative");
-        }
-        this.productQuantity = productQuantity;
-    }
 }
