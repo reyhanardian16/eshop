@@ -3,9 +3,11 @@ package id.ac.ui.cs.advprog.eshop.controller;
 import id.ac.ui.cs.advprog.eshop.model.Product;
 import id.ac.ui.cs.advprog.eshop.service.ProductService;
 
+import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -25,7 +27,11 @@ public class ProductController {
     }
 
     @PostMapping("/create")
-    public String createProductPost(@ModelAttribute Product product, Model model) {
+    public String createProductPost(@Valid @ModelAttribute("product") Product product, BindingResult result, Model model) {
+        if (result.hasErrors()) {
+            return "CreateProduct"; // Redisplay form with errors
+        }
+        System.out.println("noErrors");
         service.create(product);
         return "redirect:list";
     }

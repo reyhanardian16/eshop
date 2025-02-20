@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class ProductTest {
 
@@ -30,6 +31,15 @@ class ProductTest {
     @Test
     void testGetProductQuantity() {
         assertEquals(100, this.product.getProductQuantity());
+    }
+
+    @Test
+    void testNegativeProductQuantity() {
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> {
+            product.setProductQuantity(-1);
+        });
+
+        assertEquals("Product quantity must not be negative", exception.getMessage());
     }
 }
 
