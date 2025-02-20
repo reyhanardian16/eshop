@@ -1,13 +1,19 @@
 package id.ac.ui.cs.advprog.eshop.model;
 
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Validation;
+import jakarta.validation.Validator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.Set;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class ProductTest {
 
     Product product;
+    Validator validator;
 
     @BeforeEach
     void setUp() {
@@ -15,6 +21,7 @@ class ProductTest {
         this.product.setProductId("eb558e9f-1c39-460e-8860-71af6af63bd6");
         this.product.setProductName("Sampo Cap Bambang");
         this.product.setProductQuantity(100);
+        this.validator = Validation.buildDefaultValidatorFactory().getValidator();
     }
 
     @Test
@@ -30,6 +37,16 @@ class ProductTest {
     @Test
     void testGetProductQuantity() {
         assertEquals(100, this.product.getProductQuantity());
+    }
+
+    @Test
+    void testNegativeProductQuantity() {
+        this.product.setProductQuantity(-100);
+        Set<ConstraintViolation<Product>> violations = validator.validate(product);
+
+        assertFalse(violations.isEmpty(), "Validation should fail for negative product quantity");
+        assertTrue(violations.stream().anyMatch(v -> v.getPropertyPath().toString().equals("productQuantity")),
+                "Expected validation error on productQuantity");
     }
 }
 
