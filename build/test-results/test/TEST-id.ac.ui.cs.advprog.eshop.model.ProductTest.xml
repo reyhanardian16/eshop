@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="id.ac.ui.cs.advprog.eshop.model.ProductTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-20T10:16:23" hostname="VICTUS" time="0.616">
+<testsuite name="id.ac.ui.cs.advprog.eshop.model.ProductTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-02-20T17:15:16" hostname="VICTUS" time="0.104">
   <properties/>
-  <testcase name="testNegativeProductQuantity()" classname="id.ac.ui.cs.advprog.eshop.model.ProductTest" time="0.616"/>
-  <system-out><![CDATA[17:16:23.359 [Test worker] INFO org.hibernate.validator.internal.util.Version -- HV000001: Hibernate Validator 8.0.2.Final
-]]></system-out>
+  <testcase name="testGetProductId()" classname="id.ac.ui.cs.advprog.eshop.model.ProductTest" time="0.015"/>
+  <testcase name="testGetProductName()" classname="id.ac.ui.cs.advprog.eshop.model.ProductTest" time="0.006"/>
+  <testcase name="testGetProductQuantity()" classname="id.ac.ui.cs.advprog.eshop.model.ProductTest" time="0.006"/>
+  <testcase name="testNegativeProductQuantity()" classname="id.ac.ui.cs.advprog.eshop.model.ProductTest" time="0.076"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
