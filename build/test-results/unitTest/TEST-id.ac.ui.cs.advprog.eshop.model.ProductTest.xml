@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="id.ac.ui.cs.advprog.eshop.model.ProductTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-02-21T11:25:02" hostname="VICTUS" time="0.181">
+  <properties/>
+  <testcase name="testGetProductId()" classname="id.ac.ui.cs.advprog.eshop.model.ProductTest" time="0.021"/>
+  <testcase name="testGetProductName()" classname="id.ac.ui.cs.advprog.eshop.model.ProductTest" time="0.008"/>
+  <testcase name="testGetProductQuantity()" classname="id.ac.ui.cs.advprog.eshop.model.ProductTest" time="0.008"/>
+  <testcase name="testNegativeProductQuantity()" classname="id.ac.ui.cs.advprog.eshop.model.ProductTest" time="0.14"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

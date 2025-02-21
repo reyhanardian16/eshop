@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="id.ac.ui.cs.advprog.eshop.EshopApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-20T17:15:15" hostname="VICTUS" time="0.925">
+<testsuite name="id.ac.ui.cs.advprog.eshop.EshopApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-21T11:25:37" hostname="VICTUS" time="0.931">
   <properties/>
-  <testcase name="contextLoads()" classname="id.ac.ui.cs.advprog.eshop.EshopApplicationTests" time="0.925"/>
-  <system-out><![CDATA[00:15:12.752 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [id.ac.ui.cs.advprog.eshop.EshopApplicationTests]: EshopApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-00:15:12.960 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration id.ac.ui.cs.advprog.eshop.EshopApplication for test class id.ac.ui.cs.advprog.eshop.EshopApplicationTests
+  <testcase name="contextLoads()" classname="id.ac.ui.cs.advprog.eshop.EshopApplicationTests" time="0.931"/>
+  <system-out><![CDATA[18:25:34.506 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [id.ac.ui.cs.advprog.eshop.EshopApplicationTests]: EshopApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:25:34.727 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration id.ac.ui.cs.advprog.eshop.EshopApplication for test class id.ac.ui.cs.advprog.eshop.EshopApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -14,9 +14,9 @@
 
  :: Spring Boot ::                (v3.4.2)
 
-2025-02-21T00:15:13.732+07:00  INFO 27276 --- [eshop] [    Test worker] i.a.u.c.a.eshop.EshopApplicationTests    : Starting EshopApplicationTests using Java 21.0.6 with PID 27276 (started by reyha in C:\Users\reyha\IdeaProjects\eshop)
-2025-02-21T00:15:13.734+07:00  INFO 27276 --- [eshop] [    Test worker] i.a.u.c.a.eshop.EshopApplicationTests    : No active profile set, falling back to 1 default profile: "default"
-2025-02-21T00:15:15.607+07:00  INFO 27276 --- [eshop] [    Test worker] i.a.u.c.a.eshop.EshopApplicationTests    : Started EshopApplicationTests in 2.367 seconds (process running for 4.501)
+2025-02-21T18:25:35.444+07:00  INFO 27272 --- [eshop] [    Test worker] i.a.u.c.a.eshop.EshopApplicationTests    : Starting EshopApplicationTests using Java 21.0.6 with PID 27272 (started by reyha in C:\Users\reyha\IdeaProjects\eshop)
+2025-02-21T18:25:35.446+07:00  INFO 27272 --- [eshop] [    Test worker] i.a.u.c.a.eshop.EshopApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-02-21T18:25:37.255+07:00  INFO 27272 --- [eshop] [    Test worker] i.a.u.c.a.eshop.EshopApplicationTests    : Started EshopApplicationTests in 2.243 seconds (process running for 4.358)
 ]]></system-out>
   <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
 WARNING: A Java agent has been loaded dynamically (C:\Users\reyha\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.15.11\a38b16385e867f59a641330f0362ebe742788ed8\byte-buddy-agent-1.15.11.jar)
