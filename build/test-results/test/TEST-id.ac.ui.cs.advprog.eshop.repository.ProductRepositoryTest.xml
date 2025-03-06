@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="id.ac.ui.cs.advprog.eshop.repository.ProductRepositoryTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-21T11:25:38" hostname="VICTUS" time="0.044">
+<testsuite name="id.ac.ui.cs.advprog.eshop.repository.ProductRepositoryTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-03-06T13:42:59" hostname="VICTUS" time="0.09">
   <properties/>
-  <testcase name="testEditIfEmpty()" classname="id.ac.ui.cs.advprog.eshop.repository.ProductRepositoryTest" time="0.032"/>
-  <testcase name="testCreateAndFind()" classname="id.ac.ui.cs.advprog.eshop.repository.ProductRepositoryTest" time="0.002"/>
-  <testcase name="testFindAllIfEmpty()" classname="id.ac.ui.cs.advprog.eshop.repository.ProductRepositoryTest" time="0.001"/>
-  <testcase name="testDeleteIfMoreThanOneProduct()" classname="id.ac.ui.cs.advprog.eshop.repository.ProductRepositoryTest" time="0.001"/>
-  <testcase name="testEditProduct()" classname="id.ac.ui.cs.advprog.eshop.repository.ProductRepositoryTest" time="0.002"/>
-  <testcase name="testFindAllIfMoreThanOneProduct()" classname="id.ac.ui.cs.advprog.eshop.repository.ProductRepositoryTest" time="0.001"/>
-  <testcase name="testDeleteProduct()" classname="id.ac.ui.cs.advprog.eshop.repository.ProductRepositoryTest" time="0.001"/>
+  <testcase name="testEditIfEmpty()" classname="id.ac.ui.cs.advprog.eshop.repository.ProductRepositoryTest" time="0.065"/>
+  <testcase name="testCreateAndFind()" classname="id.ac.ui.cs.advprog.eshop.repository.ProductRepositoryTest" time="0.003"/>
+  <testcase name="testFindAllIfEmpty()" classname="id.ac.ui.cs.advprog.eshop.repository.ProductRepositoryTest" time="0.003"/>
+  <testcase name="testDeleteIfMoreThanOneProduct()" classname="id.ac.ui.cs.advprog.eshop.repository.ProductRepositoryTest" time="0.004"/>
+  <testcase name="testEditProduct()" classname="id.ac.ui.cs.advprog.eshop.repository.ProductRepositoryTest" time="0.004"/>
+  <testcase name="testFindAllIfMoreThanOneProduct()" classname="id.ac.ui.cs.advprog.eshop.repository.ProductRepositoryTest" time="0.002"/>
+  <testcase name="testDeleteProduct()" classname="id.ac.ui.cs.advprog.eshop.repository.ProductRepositoryTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
